@@ -14,8 +14,8 @@ const AppContextProvider=(props)=>{
         let city = await ipData.data.city
         let weatherData = await axios.get(`http://api.weatherapi.com/v1/current.json?key=a3df53367c0a445b93c11640230108&q=${city}&aqi=no`)
         console.log(weatherData)
+        setData(weatherData)
     }
-
     return (
         <AppContext.Provider value={{data,setData,getIP}}>
             {props.children}
