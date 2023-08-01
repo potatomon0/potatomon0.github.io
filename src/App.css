@@ -75,9 +75,8 @@
 .rightArrowBox{
   border:solid red;
   display:flex;
-  flex-direction:column;
-  /* justify-content: baseline; */
-  align-content: baseline;
+  height:100%;
+  
 }
 .rightArrow{
   font-size: 30px;
