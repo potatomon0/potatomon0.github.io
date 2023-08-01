@@ -5,9 +5,16 @@ export const AppContext = createContext()
 
 const AppContextProvider=(props)=>{
     const [data,setData]=useState(null)
+    const [count,setCount] = useState(0)
+    const next = ()=>{
+        console.log(count)
+        setCount(count+1)
+    }
+    const previous = ()=>{
+        console.log(count)
+        setCount(count-1)
+    }
     const getIP = async()=>{
-        // let ipData = await axios.get('https://ipgeolocation.abstractapi.com/v1/?api_key=1572035068e24b7dbc10e3a1c9d570ee')
-        // let ipData = await axios.get('https://api-bdc.net/data/ip-geolocation&localityLanguage=en&key=[YOUR API KEY]')
         let ipData=await axios.get("https://ipinfo.io/json?token=d382220d0ac319")
         console.log(ipData)
         console.log(ipData.data.city)
@@ -17,7 +24,7 @@ const AppContextProvider=(props)=>{
         setData(weatherData)
     }
     return (
-        <AppContext.Provider value={{data,setData,getIP}}>
+        <AppContext.Provider value={{data,setData,getIP,count,setCount, next, previous}}>
             {props.children}
         </AppContext.Provider>
     )
