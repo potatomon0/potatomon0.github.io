@@ -6,30 +6,15 @@
     height: 612px;
     justify-content: space-between;
 }
-
-.carousel {
-    border: solid red;
-}
-
 .mainContent {
     border: solid green;
     display: flex;
     justify-content: space-between;
     height: 100%;
 }
-
-.hideMe {
-    visibility: hidden;
-}
-
-.linkedinIcon {
+.linkIcon {
     height: 30px;
 }
-
-.githubIcon {
-    height: 30px;
-}
-
 .mainMylinks {
     border: solid pink;
     width: 200px;
@@ -37,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
 .myLinks {
     display: flex;
     flex-direction: column;
