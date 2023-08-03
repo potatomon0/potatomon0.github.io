@@ -1,12 +1,28 @@
-import React from 'react'
+import {useState,useEffect} from 'react'
 import './Projects.css'
 import MyLinks from '../components/MyLinks'
 import Dropdown from '../components/Dropdown'
 import arrows from '../models/arrows'
 import { Link } from 'react-router-dom'
+import ReactLoading from 'react-loading'
 
 function Projects() {
+  const [done, setDone] = useState(undefined);
+  useEffect(() => {
+      setTimeout(() => {
+          setDone(true);
+      }, 600);
+  }, []);
   return (
+    <>
+           {!done ? (
+                <div className='loading'><ReactLoading
+                    type={"bubbles"}
+                    color={"#C3CEDA"}
+                    height={100}
+                    width={100}
+                /></div>
+            ) : 
     <div className="projectsMain">
         <div className="leftArrow">
           <div>
@@ -26,6 +42,8 @@ function Projects() {
           <MyLinks />
         </div>
     </div>
+}
+    </>
   )
 }
 
