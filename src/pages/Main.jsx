@@ -10,6 +10,10 @@ import Dropdown from '../components/Dropdown'
 import Loader from '../components/Loader'
 
 function Main() {
+    const [done,setDone]=useState(null)
+    useEffect(()=>{
+        
+    })
     let { data } = useContext(AppContext)
     return (
         <div className="main">
