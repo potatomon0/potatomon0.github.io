@@ -7,17 +7,17 @@ import MyLinks from '../components/MyLinks'
 import './Main.css'
 import Weather from "../components/Weather";
 import Dropdown from '../components/Dropdown'
+import Loader from '../components/Loader'
 
 function Main() {
     let { data } = useContext(AppContext)
     return (
         <div className="main">
+            <Loader />
             <div className="mainContent">
                 <div className="mainMylinks">
                     <MyLinks />
                 </div>
-                {/* <div className="wrapper"> */}
-                {/* <div className="mainIntro"> */}
                 <div className="textContainer">
                     <div className="mainTextP1">Hello, my name is Hu and I am a current learner at Per Scholas accelerated</div>
                     <div className="mainTextP2">
