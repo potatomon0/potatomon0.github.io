@@ -27,7 +27,7 @@
     flex-direction: column;
     border: solid orange;
     justify-content: center;
-    align-items: baseline;
+    align-items:baseline;
 }
 
 .textContainer {

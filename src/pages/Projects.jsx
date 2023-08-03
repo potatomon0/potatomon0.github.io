@@ -24,6 +24,7 @@ function Projects() {
                 /></div>
             ) : 
     <div className="projectsMain">
+      <div className="left">
         <div className="leftArrow">
           <div>
             <Dropdown />
@@ -31,6 +32,8 @@ function Projects() {
           <Link to="/" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
             <div className="rightArrow">{arrows.left}</div>
           </Link></div>
+          <div className="hideMe"></div>
+          </div>
         <div className="projectContainer">
         <h1 className="pageTitle">
         Web Developer Portfolio
@@ -38,8 +41,11 @@ function Projects() {
       <div className="projects">
       Projects</div>
       </div>
+      <div  className="right">
         <div className="mainMylinks">
           <MyLinks />
+        </div>
+        <div className="hideMe"></div>
         </div>
     </div>
 }
