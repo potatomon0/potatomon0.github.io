@@ -6,23 +6,25 @@ import { Link } from 'react-router-dom'
 import MyLinks from '../components/MyLinks'
 import './Main.css'
 import Weather from "../components/Weather";
+import Dropdown from '../components/Dropdown'
 
 function Main() {
     let { data } = useContext(AppContext)
     return (
         <div className="main">
             <div className="mainContent">
-                {/* <div>
-        <Link to="/Projects" symbol="<" className="hideMe">{arrows.left}</Link>
-        </div> */}
                 <div className="mainMylinks">
                     <MyLinks />
                 </div>
                 <div className="mainIntro">Hello, my name is Hu and I am a current learner at Per Scholas accelerated Software Engineering program where I am trained on Frontend and Backend Technologies. I have utilized ReactJS to create projects including this webpage. I also have made projects with only HTML5, CSS, and Javascript.</div>
                 <div className="rightArrowBox">
+                    <div>
+                    <Dropdown />
+                    </div>
+                    <div>
                     <Link to="/Projects" style={{ textDecoration: 'none' }}>
                         <div className="rightArrow">{arrows.right}</div>
-                    </Link>
+                    </Link></div>
                 </div>
                 
             </div>
