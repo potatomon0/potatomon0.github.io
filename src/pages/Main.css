@@ -4,7 +4,6 @@
     border: solid red;
     background-color: #071330;
     height: 612px;
-    color: #C3CEDA;
     justify-content: space-between;
 }
 
@@ -44,41 +43,45 @@
     justify-content: center;
     align-items: baseline;
 }
-@keyframes textAppear{
-    0%{
-        width:150px;
-        height:150px;
-        opacity:0;
-        font-size:10px;
-    }
-    30%{
-        width:250px;
-        height:250px;
-    }
-    80%{
-        width:350px;
-        height:350px;
-    }
-    90%{
-        width:450px;
-        height:95%
-    }
-    100%{
-        width:500px;
-        height:100%;
-    }
-}
-.mainIntro {
-    /* border: solid white; */
-    height: 100%;
-    width: 500px;
-    display: flex;
+/* .wrapper{
+    background-color: #9ba5b4;
+    color:white;
+    font-size: 12px;
+    font-family: "Play", sans-serif;    height:150px;
+    border:solid red;
+} */
+/* .mainIntro{
+    border:solid white;
+    display:flex;
     flex-direction: column;
-    align-self: center;
     justify-content: center;
-    animation: textAppear 1s linear forwards;
+    align-items: center;
+} */
+.textContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:12px;
 }
-
+.mainTextP1 {
+    width:450px;
+    /* border-right: 4px solid black; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: mainTextP1 4s steps(35), blink-caret 0.5s step-end infinite alternate;
+}
+.mainTextP2{
+    width: 450px;
+    /* border-right: 4px solid black; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: mainTextP1 4s steps(35,end), blink-caret 0.5s step-end infinite alternate;
+}
+@keyframes mainTextP1 {
+    0% {
+        width: 0;
+    }
+}
 .mainContents {
     display: flex;
 }
