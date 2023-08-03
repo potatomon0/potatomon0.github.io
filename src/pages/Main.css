@@ -69,25 +69,35 @@
     /* border-right: 4px solid black; */
     white-space: nowrap;
     overflow: hidden;
-    animation: mainTextP1 4s steps(35), blink-caret 0.5s step-end infinite alternate;
+    animation: mainText 4s steps(35), blink-caret 0.5s step-end infinite alternate;
 }
 .mainTextP2{
     width: 450px;
     /* border-right: 4px solid black; */
     white-space: nowrap;
     overflow: hidden;
-    animation: mainTextP2 4s steps(35,end), blink-caret 0.5s step-end infinite alternate;
+    animation: mainText 4s steps(35,end), blink-caret 0.5s step-end infinite alternate;
     animation-fill-mode:both;animation-delay: 4s;
     
 }
-@keyframes mainTextP1 {
-    0% {
-        width: 0;
-    }
+.mainTextP3{
+    width: 450px;
+    /* border-right: 4px solid black; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: mainText 4s steps(35,end), blink-caret 0.5s step-end infinite alternate;
+    animation-fill-mode:both;animation-delay: 8s;
 }
-@keyframes mainTextP2 {
+.mainTextP4{
+    width: 450px;
+    /* border-right: 4px solid black; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: mainText 4s steps(35,end), blink-caret 0.5s step-end infinite alternate;
+    animation-fill-mode:both;animation-delay: 12s;
+}
+@keyframes mainText {
     0% {
-        visibility:visible;
         width: 0;
     }
 }
