@@ -1,54 +1,56 @@
-import { useContext } from 'react'
+import { useContext,useState,useEffect } from 'react'
 import { AppContext } from '../contexts/context'
-import Carousel from '../components/Carousel'
 import arrows from '../models/arrows'
 import { Link } from 'react-router-dom'
 import MyLinks from '../components/MyLinks'
 import './Main.css'
 import Weather from "../components/Weather";
 import Dropdown from '../components/Dropdown'
-import Loader from '../components/Loader'
+import MainText from '../components/MainText'
+import ReactLoading from 'react-loading'
 
 function Main() {
-    const [done,setDone]=useState(null)
-    useEffect(()=>{
-        
-    })
     let { data } = useContext(AppContext)
+    const [done, setDone] = useState(undefined);
+    useEffect(() => {
+        setTimeout(() => {
+            setDone(true);
+        }, 800);
+    }, []);
     return (
+        <>
+        {!done ? (
+                <div className='loading'><ReactLoading
+                    type={"bubbles"}
+                    color={"#C3CEDA"}
+                    height={100}
+                    width={100}
+                /></div>
+            ) : 
         <div className="main">
-            <Loader />
             <div className="mainContent">
                 <div className="mainMylinks">
                     <MyLinks />
                 </div>
                 <div className="textContainer">
-                    <div className="mainTextP1">Hello, my name is Hu and I am a current learner at Per Scholas accelerated</div>
-                    <div className="mainTextP2">
-                        Software Engineering program where I am trained on Frontend and Backend
-                    </div>
-                    <div className="mainTextP3">
-                        Technologies. I have utilized ReactJS to create projects including this webpage.
-                    </div>
-                    <div className="mainTextP4">
-                        I also have made projects with only HTML5, CSS, and Javascript.
-                    </div>
+                    <MainText />
                 </div>
                 <div className="rightArrowBox">
                     <div>
                         <Dropdown />
                     </div>
                     <div>
-                        <Link to="/Projects" style={{ textDecoration: 'none',color:'#C3CEDA'}}>
+                        <Link to="/Projects" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
                             <div className="rightArrow">{arrows.right}</div>
                         </Link></div>
                 </div>
-
             </div>
             <div className="mainWeather">
                 <Weather />
             </div>
         </div>
+}
+        </>
     )
 }
 
