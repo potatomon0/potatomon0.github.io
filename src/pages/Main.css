@@ -253,3 +253,111 @@
         align-items: center;
     }
 }
+
+@media (max-width:499px) {
+    .main {
+        border: solid red;
+        background-color: #071330;
+        height:595px;
+        display:flex;
+        flex-direction: column;
+    }
+    .mainContent {
+        border: solid green;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mainMylinks{
+        display: none !important;
+    }
+    .textContainer {
+        border:solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        color: #C3CEDA
+    }
+    .mainTextP1 {
+        font-size: 10px;
+        text-align: center;
+        width: 450px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+    }
+
+    .mainTextP2 {
+        font-size: 10px;
+        width: 450px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+    }
+
+    .mainTextP3 {
+        font-size: 10px;
+        width: 450px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        animation-fill-mode: both;
+        animation-delay: 4s;
+    }
+
+    .mainTextP4 {
+        font-size: 10px;
+        width: 450px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        animation-fill-mode: both;
+        animation-delay: 6s;
+    }
+
+    @keyframes mainText {
+        0% {
+            width: 0;
+        }
+    }
+
+    .mainContents {
+        display: flex;
+    }
+
+    .rightArrowBox {
+        display: none;
+
+    }
+
+    .mainWeather {
+        border: solid purple;
+        height: 150px;
+        color: #C3CEDA;
+    }
+
+    .menu-trigger img {
+        display: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .loading {
+        background-color: #071330;
+        height: 612px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
