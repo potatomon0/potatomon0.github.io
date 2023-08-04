@@ -109,7 +109,7 @@
         opacity:0;
         transform:translateX(105%);
     }
-    20%{
+    30%{
         opacity:0;
         transform:translateX(105%);
     }
@@ -123,7 +123,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rightArrow 1s;
+    animation: rightArrow 1.6s;
 }
 
 .mainWeather {
