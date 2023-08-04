@@ -278,51 +278,51 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
-        color: #C3CEDA
+        font-size: 15px;
+        color: #C3CEDA;
+        width:300px;
+        height:400px;
+        align-self: center;
     }
     .mainTextP1 {
-        font-size: 10px;
         text-align: center;
-        width: 450px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        /* width: 450px; */
+        border:solid white;
+        word-wrap:break-word;
+        overflow:wrap;
+        animation: mainTextFadeIn 2s;
     }
 
     .mainTextP2 {
-        font-size: 10px;
-        width: 450px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        /* white-space: nowrap;
+        overflow: hidden; */
+        animation: mainTextFadeIn 2s;
         animation-fill-mode: both;
-        animation-delay: 2s;
+        animation-delay: 1.2s;
     }
 
     .mainTextP3 {
-        font-size: 10px;
-        width: 450px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        /* white-space: nowrap;
+        overflow: hidden; */
+        animation: mainTextFadeIn 2s;
         animation-fill-mode: both;
-        animation-delay: 4s;
+        animation-delay: 2.4s;
     }
 
     .mainTextP4 {
-        font-size: 10px;
-        width: 450px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: mainText 2s steps(45, end), blink-caret 0.5s step-end infinite alternate;
+        /* white-space: nowrap;
+        overflow: hidden; */
+        animation: mainTextFadeIn 2s;
         animation-fill-mode: both;
-        animation-delay: 6s;
+        animation-delay: 3.6s;
     }
 
-    @keyframes mainText {
+    @keyframes mainTextFadeIn {
         0% {
-            width: 0;
+            opacity:0;
+        }
+        65%{
+            opacity:1;
         }
     }
 
