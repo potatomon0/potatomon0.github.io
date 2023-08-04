@@ -28,8 +28,18 @@
     border: solid orange;
     justify-content: center;
     align-items:baseline;
+    animation: linkFadein .8s;
 }
-
+@keyframes linkFadein{
+    0%{
+        opacity:0;
+        transform:translateX(-20px);
+    }
+    20%{
+        opacity:0;
+        transform:translateX(-20px);
+    }
+}
 .textContainer {
     display: flex;
     flex-direction: column;
@@ -92,8 +102,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
 }
-
+@keyframes rightArrow{
+    0%{
+        opacity:0;
+        transform:translateX(105%);
+    }
+    20%{
+        opacity:0;
+        transform:translateX(105%);
+    }
+}
 .rightArrow {
     font-size: 60px;
     border: solid blue;
@@ -103,6 +123,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rightArrow 1s;
 }
 
 .mainWeather {
