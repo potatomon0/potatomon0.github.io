@@ -11,4 +11,4 @@ Project detail page:
 ![image](https://github.com/potatomon0/portfolio.github.io/assets/26445183/872b2c9c-0326-445f-b301-a523675273cb)
 
 Page/Component hierarchy:
-
+![image](https://github.com/potatomon0/portfolio.github.io/assets/26445183/b06b2083-041c-4174-a504-235c7bd370ed)
