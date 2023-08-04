@@ -7,8 +7,13 @@ import { Link } from 'react-router-dom'
 import ReactLoading from 'react-loading'
 import pkmImg from '../img/pokemonBudgetGame.png'
 import projectInfo from '../models/projectInfo'
+import pj1Img from '../img/pj1Filler.png'
+import pj2Img from '../img/pj2Filler.png'
+import pj3Img from '../img/pj3Filler.png'
+import pj4Img from '../img/pj4Filler.png'
 
 function Projects() {
+  const {pj1,pj2,pj3,pj4}=useState(projectInfo)
   const [done, setDone] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
@@ -42,12 +47,11 @@ function Projects() {
             </h1>
             <div className="projects">
               {projectInfo.map((project) => {
-                <Link to="/ProjectInfo" pjName={project.name}>
+                <Link to="/ProjectInfo"><div className="project">{project.name}</div>
                 </Link>
               })}
-              // <Link to="/ProjectInfo">
-              //   <img src={pkmImg} alt="" className="pkmProjectImg" />
-              //   </Link>
+              {/* <Link to="/ProjectInfo">{projectInfo[0].name}
+                </Link> */}
             </div>
           </div>
           <div className="right">
