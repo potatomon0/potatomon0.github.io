@@ -58,9 +58,14 @@
     border:solid red;
     height:600px;
     width:500px;
+    padding:1em;
+    display:grid;
+    justify-content: space-evenly;
+    /* grid-template:200px 200px / 200px 200px; */
+    grid-template-columns:150px 150px;
 }
 .project{
     border:solid pink;
-    height:100px;
-    width:100px;
+    height:200px;
+    /* width:100px; */
 }

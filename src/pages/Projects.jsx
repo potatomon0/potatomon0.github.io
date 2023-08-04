@@ -13,7 +13,7 @@ import pj3Img from '../img/pj3Filler.png'
 import pj4Img from '../img/pj4Filler.png'
 
 function Projects() {
-  const {pj1,pj2,pj3,pj4}=useState(projectInfo)
+  const { pj1, pj2, pj3, pj4 } = useState(projectInfo)
   const [done, setDone] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
@@ -47,11 +47,13 @@ function Projects() {
             </h1>
             <div className="projects">
               {projectInfo.map((project) => {
-                <Link to="/ProjectInfo"><div className="project">{project.name}</div>
-                </Link>
-              })}
+                return (
+                  <Link to="/ProjectInfo">
+                    <div className="project">{project.name}</div>
+                    </Link>)
+                    })}
               {/* <Link to="/ProjectInfo">{projectInfo[0].name}
-                </Link> */}
+              </Link>) */}
             </div>
           </div>
           <div className="right">
