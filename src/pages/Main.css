@@ -278,40 +278,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 13px;
         color: #C3CEDA;
-        width:300px;
-        height:400px;
+        width:250px;
+        height:300px;
         align-self: center;
     }
     .mainTextP1 {
-        text-align: center;
-        /* width: 450px; */
-        border:solid white;
-        word-wrap:break-word;
-        overflow:wrap;
         animation: mainTextFadeIn 2s;
     }
 
     .mainTextP2 {
-        /* white-space: nowrap;
-        overflow: hidden; */
         animation: mainTextFadeIn 2s;
         animation-fill-mode: both;
         animation-delay: 1.2s;
     }
 
     .mainTextP3 {
-        /* white-space: nowrap;
-        overflow: hidden; */
         animation: mainTextFadeIn 2s;
         animation-fill-mode: both;
         animation-delay: 2.4s;
     }
 
     .mainTextP4 {
-        /* white-space: nowrap;
-        overflow: hidden; */
         animation: mainTextFadeIn 2s;
         animation-fill-mode: both;
         animation-delay: 3.6s;
