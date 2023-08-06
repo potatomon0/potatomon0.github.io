@@ -71,11 +71,11 @@
     border:solid 4px rgba(201, 23, 127, 0.918);
     width:100%;
 }
-.title{
+.pjTitle{
     border:solid red;
     height:50px;
 }
-.info{
+.pjIntro{
     border:solid green;
     height:40px;
 }
@@ -90,4 +90,7 @@
 .about{
     border:solid red;
     height:40px;
+}
+.gitLink{
+    height:30px;
 }

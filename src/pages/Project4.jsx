@@ -3,8 +3,13 @@ import './Project.css'
 import ReactLoading from 'react-loading'
 import { Link } from 'react-router-dom'
 import arrows from '../models/arrows'
+import projectInfo from '../models/projectInfo'
+import ProjectTitle from '../components/ProjectTitle'
+import ProjectIntro from '../components/ProjectIntro'
+import ProjectLink from '../components/ProjectLink'
 
 function Project4() {
+  const pj = projectInfo[3]
   const [done, setDone] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
@@ -26,9 +31,9 @@ function Project4() {
             <div className="leftArrow">{arrows.left}</div>
           </Link></div>
           <div className="center">
-            <h2 className="title">Project Title 4</h2>
-            <div className="info">Project information...</div>
-            <div className="pjLink">Link button to prject</div>
+            <ProjectTitle pj={pj}/>
+            <ProjectIntro pj={pj} />
+            <ProjectLink pj={pj}/>
             <div className="pjImgCarousel">PJ IMG Carousel</div>
             <div className="about">About this project</div>
             <div className="technical"></div>

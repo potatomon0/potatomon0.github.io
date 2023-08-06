@@ -4,7 +4,7 @@
 // import pj4Img from '../img/pj4Filler.png'
 
 const pj1 = {
-    name:"Project1",intro:"PJ1 is about sososo.",img:"'../img/pj1Filler.png'"
+    name:"Project1",intro:"PJ1 is about sososo.",img:"'../img/pj1Filler.png'",git:"https://github.com/potatomon0/calculator"
 }
 const pj2={
     name:"Project2",intro:"PJ2 is about thatthatthat",img:"pj2Img"

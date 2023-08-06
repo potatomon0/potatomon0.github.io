@@ -5,15 +5,17 @@ import { Link } from 'react-router-dom'
 import arrows from '../models/arrows'
 import projectInfo from '../models/projectInfo'
 import ProjectTitle from '../components/ProjectTitle'
+import ProjectIntro from '../components/ProjectIntro'
+import ProjectLink from '../components/ProjectLink'
 
 function Project1() {
-  const pj1 = projectInfo[0]
+  const pj = projectInfo[0]
   const [done, setDone] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
       setDone(true);
     }, 600);
-    console.log(pj1)
+    console.log(pj)
   }, []);
   return (
     <>
@@ -30,9 +32,9 @@ function Project1() {
             <div className="leftArrow">{arrows.left}</div>
           </Link></div>
           <div className="center">
-            <h2 className="title"><ProjectTitle pj={pj1}/></h2>
-            <div className="info">Project information...</div>
-            <div className="pjLink">Link button to prject</div>
+            <ProjectTitle pj={pj}/>
+            <ProjectIntro pj={pj} />
+            <ProjectLink pj={pj}/>
             <div className="pjImgCarousel">PJ IMG Carousel</div>
             <div className="about">About this project</div>
             <div className="technical"></div>

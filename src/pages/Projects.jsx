@@ -31,12 +31,9 @@ function Projects() {
       ) :
         <div className="projectsMain">
           <div className="left">
-            <div className="leftArrow">
-              <div>
-                <Dropdown />
-              </div>
+            <div className="leftArrowBox">
               <Link to="/" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
-                <div className="rightArrow">{arrows.left}</div>
+                <div className="leftArrow">{arrows.left}</div>
               </Link></div>
             <div className="hideMe"></div>
           </div>
@@ -66,8 +63,9 @@ function Projects() {
             </div>
           </div>
           <div className="right">
+            <Dropdown />
             <div className="mainMylinks">
-              <MyLinks />
+              <MyLinks rightLinks={"rightLinks"}/>
             </div>
             <div className="hideMe"></div>
           </div>

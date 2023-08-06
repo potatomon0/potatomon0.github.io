@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import React, { useContext, useEffect } from 'react';
 import {AppContext} from './contexts/context'
 import { Route, Routes } from 'react-router-dom'
