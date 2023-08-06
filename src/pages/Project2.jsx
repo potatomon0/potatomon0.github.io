@@ -7,6 +7,7 @@ import projectInfo from '../models/projectInfo'
 import ProjectTitle from '../components/ProjectTitle'
 import ProjectIntro from '../components/ProjectIntro'
 import ProjectLink from '../components/ProjectLink'
+import Dropdown from '../components/Dropdown'
 
 function Project2() {
   const pj = projectInfo[1]
@@ -39,6 +40,7 @@ function Project2() {
             <div className="technical"></div>
           </div>
           <div className="rightBtn">
+          <Dropdown />
             <Link to="/Project3" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
               <div className="rightArrow">{arrows.right}</div>
             </Link></div>

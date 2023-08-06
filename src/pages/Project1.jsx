@@ -7,6 +7,7 @@ import projectInfo from '../models/projectInfo'
 import ProjectTitle from '../components/ProjectTitle'
 import ProjectIntro from '../components/ProjectIntro'
 import ProjectLink from '../components/ProjectLink'
+import Dropdown from '../components/Dropdown'
 
 function Project1() {
   const pj = projectInfo[0]
@@ -32,14 +33,15 @@ function Project1() {
             <div className="leftArrow">{arrows.left}</div>
           </Link></div>
           <div className="center">
-            <ProjectTitle pj={pj}/>
+            <ProjectTitle pj={pj} />
             <ProjectIntro pj={pj} />
-            <ProjectLink pj={pj}/>
+            <ProjectLink pj={pj} />
             <div className="pjImgCarousel">PJ IMG Carousel</div>
             <div className="about">About this project</div>
             <div className="technical"></div>
           </div>
           <div className="rightBtn">
+            <Dropdown />
             <Link to="/Project2" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
               <div className="rightArrow">{arrows.right}</div>
             </Link></div>
