@@ -1,6 +1,6 @@
 @media (min-width:451px) {
     .projectsMain {
-        border: solid white;
+        /* border: solid white; */
         background-color: #071330;
         height: 612px;
         color: #C3CEDA;
@@ -9,7 +9,7 @@
     }
 
     .projectContainer {
-        border: solid white;
+        /* border: solid white; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,13 +17,13 @@
     }
 
     .pageTitle {
-        border: solid red;
+        /* border: solid red; */
         margin: 20px;
         height: 100px;
     }
 
     .leftArrowBox {
-        border: solid red;
+        /* border: solid red; */
         display: flex;
         height: 100%;
         width: 200px;
@@ -33,7 +33,7 @@
     }
 
     .leftArrow {
-        border: solid pink;
+        /* border: solid pink; */
         display: flex;
         height: 100%;
         width: 200px;
@@ -43,7 +43,7 @@
     }
 
     .mainMylinks {
-        border: solid pink;
+        /* border: solid pink; */
         width: 200px;
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
         height: 462px;
         display: flex;
         flex-direction: column;
-        border: solid orange;
+        /* border: solid orange; */
         justify-content: center;
         /* align-items:last baseline; */
     }
@@ -72,11 +72,12 @@
 
     .filterSection {
         height: 80px;
-        border: solid green;
+        /* border: solid green; */
     }
 
     .projects {
-        border: solid red;
+        border-top: solid #738FA7;
+        border-bottom: solid #738FA7;
         height: 450px;
         width: 500px;
         display: grid;
@@ -85,12 +86,13 @@
         row-gap: 20px;
         column-gap: 120px;
         grid-template-columns: 150px 150px;
+        margin-bottom: 15px;
     }
 
     .project {
         width: 180px;
         height: 150px;
-        border: solid pink;
+        /* border: solid pink; */
         margin: 1.5em;
         align-self: center;
         transition: transform .8s
@@ -102,15 +104,16 @@
     transition:transform .8s
 }*/
     .project:hover {
-        border: solid pink;
+        border: solid #0C4160;
+        border-radius:20px;
         transform: scale(1.1);
     }
 
     .pjImg {
-        border: solid white;
+        border: solid #738FA7;
         margin: 5px;
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
     }
 
     .pjLinkDiv {
@@ -135,7 +138,7 @@
     }
 
     a:hover {
-        color: green;
+        color: #0C4160;
     }
 
     .dropdown-menu {
@@ -232,7 +235,7 @@
     .rightLinks {
         display: flex;
         flex-direction: column;
-        border: solid orange;
+        /* border: solid orange; */
         justify-content: center;
         align-items: baseline;
         animation: linkFadein .8s;
@@ -243,7 +246,7 @@
         display:none;
     }
     .projectsMain {
-        border: solid white;
+        /* border: solid white; */
         background-color: #071330;
         height: 612px;
         color: #C3CEDA;
@@ -253,7 +256,7 @@
     }
 
     .projectContainer {
-        border: solid white;
+        /* border: solid white; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -261,18 +264,18 @@
     }
 
     .pageTitle {
-        border: solid red;
+        /* border: solid red; */
         margin: 20px;
         height: 100px;
     }
     .pjImg {
-        border: solid white;
+        border: solid #C3CEDA;
         margin: 5px;
         height: 80px;
         width: 80px;
     }
     .projects {
-        border: solid red;
+        /* border: solid red; */
         /* height: 450px;
         width: 500px; */
         display: grid;
@@ -283,14 +286,28 @@
         grid-template-columns: 100px 100px;
     }
     .project {
-        border: solid pink;
+        /* border: solid pink; */
         transition: transform .8s
     }
     .project:hover {
-        border: solid pink;
+        border: solid #C3CEDA;
         transform: scale(1.1);
+        color:#C3CEDA;
     }
     .navbar{
-        height:90px;
+        height:30px;
+    }
+    .hide{
+        height:120px;
+    }
+    .pageTitle{
+        font-size: 20px;
+        /* border:solid red; */
+        height:30px;
+    }
+    .filterSection{
+        /* border:solid red; */
+        height:50px;
+        margin:2em;
     }
 }

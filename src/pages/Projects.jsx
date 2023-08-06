@@ -55,11 +55,11 @@ function Projects() {
                     </Link>)}
                     )} */}
             <div className="project">
-              <Link to="/Project1"><div className="pjLinkDiv"><img src={pj1Img} alt="" className="pjImg"/><h5>Project1</h5></div></Link>
+              <Link to="/Project1" style={{ textDecoration: 'none', color: '#C3CEDA' }}><div className="pjLinkDiv"><img src={pj1Img} alt="" className="pjImg"/><h5>Project1</h5></div></Link>
             </div>
-            <div className="project"><Link to="/Project2"><div className="pjLinkDiv"><img src={pj2Img} alt="" className="pjImg"/><h5>Project2</h5></div></Link></div>
-            <div className="project"><Link to="/Project3"><div className="pjLinkDiv"><img src={pj3Img} alt="" className="pjImg"/><h5>Project3</h5></div></Link></div>
-            <div className="project"><Link to="/Project4"><div className="pjLinkDiv"><img src={pj4Img} alt="" className="pjImg"/><h5>Project4</h5></div></Link></div>
+            <div className="project"><Link to="/Project2" style={{ textDecoration: 'none', color: '#C3CEDA' }}><div className="pjLinkDiv"><img src={pj2Img} alt="" className="pjImg"/><h5>Project2</h5></div></Link></div>
+            <div className="project"><Link to="/Project3" style={{ textDecoration: 'none', color: '#C3CEDA' }}><div className="pjLinkDiv"><img src={pj3Img} alt="" className="pjImg"/><h5>Project3</h5></div></Link></div>
+            <div className="project"><Link to="/Project4" style={{ textDecoration: 'none', color: '#C3CEDA' }}><div className="pjLinkDiv"><img src={pj4Img} alt="" className="pjImg"/><h5>Project4</h5></div></Link></div>
             </div>
           </div>
           <div className="right">
@@ -70,6 +70,7 @@ function Projects() {
             <div className="hideMe"></div>
           </div>
           <Navbar />
+          <div className="hide"></div>
         </div>
       }
     </>
