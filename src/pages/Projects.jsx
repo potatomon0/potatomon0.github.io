@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './Projects.css'
 import MyLinks from '../components/MyLinks'
 import Dropdown from '../components/Dropdown'
-import arrows from '../models/arrows'
+import LeftArrow from '../components/LeftArrow'
 import { Link } from 'react-router-dom'
 import ReactLoading from 'react-loading'
 import projectInfo from '../models/projectInfo'
@@ -32,9 +32,8 @@ function Projects() {
         <div className="projectsMain">
           <div className="left">
             <div className="leftArrowBox">
-              <Link to="/" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
-                <div className="leftArrow">{arrows.left}</div>
-              </Link></div>
+              <LeftArrow />
+              </div>
             <div className="hideMe"></div>
           </div>
           <div className="projectContainer">

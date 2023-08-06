@@ -1,6 +1,6 @@
 import { useContext,useState,useEffect } from 'react'
 import { AppContext } from '../contexts/context'
-import arrows from '../models/arrows'
+import RightArrow from '../components/RightArrow'
 import { Link } from 'react-router-dom'
 import MyLinks from '../components/MyLinks'
 import './Main.css'
@@ -35,18 +35,11 @@ function Main() {
                     <MainText />
                 </div>
                 <div className="rightArrowBox">
-                    <div>
-                        <Dropdown />
-                    </div>
-                    <div>
-                        <Link to="/Projects" style={{ textDecoration: 'none', color: '#C3CEDA' }}>
-                            <div className="rightArrow">{arrows.right}</div>
-                        </Link></div>
+                    <Dropdown />
+                    <RightArrow />
                 </div>
             </div>
-            <div className="mainWeather">
-                <Weather />
-            </div>
+            <Weather />
         </div>
 }
         </>

@@ -5,7 +5,7 @@ function Weather() {
   let { data } = useContext(AppContext)
   const loaded = () => {
     return (
-      <div>
+      <div className="weather">
         <div>
           <img src={data.data.current.condition.icon} alt="" />
         </div>
