@@ -4,9 +4,37 @@
     height:612px;
     color:#C3CEDA;
     display:flex;
-    flex-direction: column;
     justify-content: space-between;
+}
+.leftBtn{
+    border:solid yellow;
+    width:150px;
+}
+.rightBtn{
+    border:solid yellow;
+    width:150px;
+}
+.center{
+    border:solid 4px rgba(201, 23, 127, 0.918);
+    width:100%;
 }
 .title{
     border:solid red;
+    height:50px;
+}
+.info{
+    border:solid green;
+    height:40px;
+}
+.pjLink{
+    border:solid red;
+    height:40px;
+}
+.pjImgCarousel{
+    border:solid green;
+    height:400px;
+}
+.about{
+    border:solid red;
+    height:40px;
 }
