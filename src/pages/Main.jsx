@@ -10,7 +10,6 @@ import MainText from '../components/MainText'
 import ReactLoading from 'react-loading'
 
 function Main() {
-    let { data } = useContext(AppContext)
     const [done, setDone] = useState(undefined);
     useEffect(() => {
         setTimeout(() => {
