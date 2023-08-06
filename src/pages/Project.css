@@ -1,0 +1,12 @@
+.projectMain{
+    border:solid white;
+    background-color: #071330;
+    height:612px;
+    color:#C3CEDA;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    border:solid red;
+}

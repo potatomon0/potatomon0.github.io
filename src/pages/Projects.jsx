@@ -5,7 +5,6 @@ import Dropdown from '../components/Dropdown'
 import arrows from '../models/arrows'
 import { Link } from 'react-router-dom'
 import ReactLoading from 'react-loading'
-import pkmImg from '../img/pokemonBudgetGame.png'
 import projectInfo from '../models/projectInfo'
 import pj1Img from '../img/pj1Filler.png'
 import pj2Img from '../img/pj2Filler.png'
@@ -45,6 +44,7 @@ function Projects() {
             <h1 className="pageTitle">
               Web Developer Portfolio
             </h1>
+            <div className="filterSection">Sort by tag</div>
             <div className="projects">
             {/*
               {projectInfo.map((project,i) => {
@@ -58,11 +58,11 @@ function Projects() {
                     </Link>)}
                     )} */}
             <div className="project">
-              <Link to="/Project1">Project1</Link>
+              <Link to="/Project1"><div className="pjLinkDiv"><img src={pj1Img} alt="" className="pjImg"/><h5>Project1</h5></div></Link>
             </div>
-            <div className="project"></div>
-            <div className="project"></div>
-            <div className="project"></div>
+            <div className="project"><Link to="/Project2"><div className="pjLinkDiv"><img src={pj2Img} alt="" className="pjImg"/><h5>Project2</h5></div></Link></div>
+            <div className="project"><Link to="/Project3"><div className="pjLinkDiv"><img src={pj3Img} alt="" className="pjImg"/><h5>Project3</h5></div></Link></div>
+            <div className="project"><Link to="/Project4"><div className="pjLinkDiv"><img src={pj4Img} alt="" className="pjImg"/><h5>Project4</h5></div></Link></div>
             </div>
           </div>
           <div className="right">
