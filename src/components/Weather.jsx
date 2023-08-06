@@ -7,7 +7,7 @@ function Weather() {
     return (
       <div className="weather">
         <div>
-          <img src={data.data.current.condition.icon} alt="" />
+          <img src={data.data.current.condition.icon} alt="" className="weatherIcon"/>
         </div>
         <div>
           {data.data.location.name}, {data.data.location.region}

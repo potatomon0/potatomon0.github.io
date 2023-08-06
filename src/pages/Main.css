@@ -1,4 +1,4 @@
-@media (min-width: 500px) {
+@media (min-width: 451px) {
     .main {
         display: flex;
         flex-direction: column;
@@ -136,7 +136,9 @@
         align-items: center;
         animation: rightArrow 1.6s;
     }
-
+    .navbar{
+        display:none;
+    }
     .weather {
         border: solid purple;
         height: 150px;
@@ -257,7 +259,7 @@
     }
 }
 
-@media (max-width:499px) {
+@media (max-width:450px) {
     .main {
         border: solid red;
         background-color: #071330;
@@ -326,13 +328,24 @@
         display: none;
 
     }
-
-    .mainWeather {
-        border: solid purple;
-        height: 150px;
-        color: #C3CEDA;
+    .navbar{
+        border:solid red;
+        height:30px;
+        display:flex;
+        justify-content: space-evenly;
     }
-
+    .weather {
+        border: solid purple;
+        height: 100px;
+        font-size: 12px;;
+        color: #C3CEDA;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .weatherIcon{
+        height:30px;
+    }
     .menu-trigger img {
         display: none;
     }

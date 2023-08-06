@@ -10,6 +10,7 @@ import pj1Img from '../img/pj1Filler.png'
 import pj2Img from '../img/pj2Filler.png'
 import pj3Img from '../img/pj3Filler.png'
 import pj4Img from '../img/pj4Filler.png'
+import Navbar from '../components/Navbar'
 
 function Projects() {
   const { pj1, pj2, pj3, pj4 } = useState(projectInfo)
@@ -68,6 +69,7 @@ function Projects() {
             </div>
             <div className="hideMe"></div>
           </div>
+          <Navbar />
         </div>
       }
     </>

@@ -8,6 +8,7 @@ import Weather from "../components/Weather";
 import Dropdown from '../components/Dropdown'
 import MainText from '../components/MainText'
 import ReactLoading from 'react-loading'
+import Navbar from '../components/Navbar'
 
 function Main() {
     const [done, setDone] = useState(undefined);
@@ -39,6 +40,7 @@ function Main() {
                     <RightArrow />
                 </div>
             </div>
+            <Navbar />
             <Weather />
         </div>
 }
