@@ -58,14 +58,32 @@
     border:solid red;
     height:600px;
     width:500px;
-    padding:1em;
     display:grid;
-    justify-content: space-evenly;
-    /* grid-template:200px 200px / 200px 200px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px ;
+    column-gap: 120px;
     grid-template-columns:150px 150px;
 }
 .project{
+    width:180px;
+    height:200px;
+    border: solid pink;
+    margin:1.5em;
+    align-self:center;
+    transition:transform .8s
+}
+/* .project{
     border:solid pink;
     height:200px;
-    /* width:100px; */
+    transition:transform .8s
+}*/
+.project:hover{
+    border:solid pink;
+    transform:scale(1.1);
 }
+/*.pjImg{
+    border:solid white;
+    height:100px;
+    width:100px;
+} */

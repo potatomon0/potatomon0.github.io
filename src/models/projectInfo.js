@@ -4,7 +4,7 @@
 // import pj4Img from '../img/pj4Filler.png'
 
 const pj1 = {
-    name:"Project1",intro:"PJ1 is about sososo.",img:"pj1Img"
+    name:"Project1",intro:"PJ1 is about sososo.",img:"'../img/pj1Filler.png'"
 }
 const pj2={
     name:"Project2",intro:"PJ2 is about thatthatthat",img:"pj2Img"
@@ -17,3 +17,14 @@ const pj4={
 }
 
 module.exports = [pj1,pj2,pj3,pj4]
+
+// {projectInfo.map((project,i) => {
+//     const {name, intro, img} = project
+//     console.log(intro)
+//     return(
+//       <Link to={`/ProjectInfo/${intro}`} key={i}>
+//         <div className="project">
+//           <div><img src={project.img} alt="" className="pjImg"/>
+//           </div>{project.name}</div>
+//         </Link>)}
+//         )}

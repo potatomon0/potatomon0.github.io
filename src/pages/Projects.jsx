@@ -14,7 +14,7 @@ import pj4Img from '../img/pj4Filler.png'
 
 function Projects() {
   const { pj1, pj2, pj3, pj4 } = useState(projectInfo)
-  const [done, setDone] = useState(undefined);
+  const [done, setDone] = useState(undefined)
   useEffect(() => {
     setTimeout(() => {
       setDone(true);
@@ -46,14 +46,23 @@ function Projects() {
               Web Developer Portfolio
             </h1>
             <div className="projects">
-              {projectInfo.map((project) => {
-                return (
-                  <Link to="/ProjectInfo">
-                    <div className="project">{project.name}</div>
-                    </Link>)
-                    })}
-              {/* <Link to="/ProjectInfo">{projectInfo[0].name}
-              </Link>) */}
+            {/*
+              {projectInfo.map((project,i) => {
+                const {name,intro,img}=project
+                console.log(intro)
+                return(
+                  <Link to={`/ProjectInfo/${intro}`} key={i}>
+                    <div className="project">
+                      <div><img src={img} alt="" className="pjImg"/>
+                      </div>{name}</div>
+                    </Link>)}
+                    )} */}
+            <div className="project">
+              <Link to="/Project1">Project1</Link>
+            </div>
+            <div className="project"></div>
+            <div className="project"></div>
+            <div className="project"></div>
             </div>
           </div>
           <div className="right">
