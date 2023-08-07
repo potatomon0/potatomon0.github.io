@@ -37,7 +37,7 @@ function Project1() {
             <ProjectIntro pj={pj} />
             <ProjectLink pj={pj} />
             <div className="pjImgCarousel">PJ IMG Carousel</div>
-            <div className="about">About this project</div>
+            <div className="aboutPj">About this project</div>
             <div className="technical"></div>
           </div>
           <div className="rightBtn">

@@ -67,7 +67,7 @@
 
     .hideMe {
         height: 150px;
-        border: solid red;
+        /* border: solid red; */
     }
 
     .filterSection {

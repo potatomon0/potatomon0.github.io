@@ -201,7 +201,6 @@
         transform: translateY(-20px);
         transition: var(--speed) ease;
     }
-
     h3 {
         width: 100%;
         text-align: center;

@@ -54,7 +54,7 @@
 
     .leftArrow {
         font-size: 60px;
-        border: solid blue;
+        /* border: solid blue; */
         color: #C3CEDA;
         height: 70px;
         width: 60px;
@@ -66,7 +66,7 @@
 
     .rightArrow {
         font-size: 60px;
-        border: solid blue;
+        /* border: solid blue; */
         color: #C3CEDA;
         height: 70px;
         width: 60px;
@@ -118,6 +118,7 @@
         border: solid white;
         background-color: #071330;
         height: 612px;
+        width:385px;
         color: #C3CEDA;
         display: flex;
         justify-content: space-between;
@@ -125,5 +126,27 @@
     .gitLink{
         border: solid red;
         height: 40px;
+    }
+    .pjTitle{
+        border:solid red;
+        height:50px;
+        width:380px;
+        text-align: center;
+        font-size:30px;
+    }
+    .pjIntro{
+        border:solid green;
+        text-align:center;
+    }
+    .pjLinks{
+        border:solid red;
+    }
+    .pjImgCarousel{
+        border:solid green;
+        height:280px;
+    }
+    .aboutPj{
+        border:solid red;
+        height:80px;
     }
 }

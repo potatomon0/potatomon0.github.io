@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect,useContext } from 'react'
 import './Projects.css'
+import { AppContext } from '../contexts/context'
 import MyLinks from '../components/MyLinks'
 import Dropdown from '../components/Dropdown'
 import LeftArrow from '../components/LeftArrow'
@@ -14,8 +15,10 @@ import Navbar from '../components/Navbar'
 
 function Projects() {
   const { pj1, pj2, pj3, pj4 } = useState(projectInfo)
+  let {setOpen} = useContext(AppContext)
   const [done, setDone] = useState(undefined)
   useEffect(() => {
+    setOpen(false);
     setTimeout(() => {
       setDone(true);
     }, 600);

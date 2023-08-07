@@ -11,8 +11,10 @@ import ReactLoading from 'react-loading'
 import Navbar from '../components/Navbar'
 
 function Main() {
+    let {setOpen} = useContext(AppContext)
     const [done, setDone] = useState(undefined);
     useEffect(() => {
+        setOpen(false);
         setTimeout(() => {
             setDone(true);
         }, 600);
