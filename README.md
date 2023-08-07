@@ -25,5 +25,5 @@ Page/Component hierarchy:
 * Map through the project data instead of created template pages for them.
 
 ## APIs References:
-IP Geolocation API: https://ipinfo.io/
-Weather API: https://www.weatherapi.com/
+* IP Geolocation API: https://ipinfo.io/
+* Weather API: https://www.weatherapi.com/
