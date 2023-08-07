@@ -2,7 +2,7 @@
 ## Description:
 I created a portfolio webpage using ReactJS. We are close to bootcamp graduation and it is time for us to build a webpage to showcase our projects.
 
-General Website functionality:
+## General Website functionality:
 This website uses two APIs, one is to get the city/state location of the user with their IP address and that information is used to fetch weather data from a weather API. The portfolio website main page starts with the about me introuduction. About page has a button which leads to the adjacent Projects page. Project page will have clickable thumbnails that leads to individual project pages. A dropdown menu component is shared across the the pages.  
 
 
