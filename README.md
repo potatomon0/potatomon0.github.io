@@ -1,4 +1,4 @@
-# MOD 2 Portfolio Porject:
+# MOD 2 Portfolio Project:
 ## Description:
 I created a portfolio webpage using ReactJS. We are close to bootcamp graduation and it is time for us to build a webpage to showcase our projects.
 
