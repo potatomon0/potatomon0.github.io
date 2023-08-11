@@ -1,4 +1,9 @@
 @media (min-width:451px) {
+    html,body{
+        height:100%;
+        width:100%;
+        background-color: #071330;
+    }
     .projectsMain {
         height:100%;
         /* border: solid white; */
@@ -243,6 +248,11 @@
     }
 }
 @media (max-width:450px){
+    html,body{
+        height:100%;
+        width:100%;
+        background-color: #071330;
+    }
     .leftArrowBox,.right{
         display:none;
     }
