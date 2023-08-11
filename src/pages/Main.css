@@ -1,6 +1,7 @@
 @media (min-width: 451px) {
     .main {
         height:100%;
+        width:100%;
         display: flex;
         flex-direction: column;
         /* border: solid red; */
@@ -251,7 +252,8 @@
 
     .loading {
         background-color: #071330;
-        height: 612px;
+        height:100%;
+        width:100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -261,6 +263,7 @@
 @media (max-width:450px) {
     .main {
         height:100%;
+        width:100%;
         /* border: solid red; */
         background-color: #071330;
         height:595px;
@@ -360,7 +363,8 @@
 
     .loading {
         background-color: #071330;
-        height: 612px;
+        height:100%;
+        width:100%;
         display: flex;
         justify-content: center;
         align-items: center;
