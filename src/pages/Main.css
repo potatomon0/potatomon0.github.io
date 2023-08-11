@@ -1,5 +1,6 @@
 @media (min-width: 451px) {
     .main {
+        height:100%;
         display: flex;
         flex-direction: column;
         /* border: solid red; */
@@ -259,6 +260,7 @@
 
 @media (max-width:450px) {
     .main {
+        height:100%;
         /* border: solid red; */
         background-color: #071330;
         height:595px;

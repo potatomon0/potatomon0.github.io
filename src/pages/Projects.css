@@ -1,5 +1,6 @@
 @media (min-width:451px) {
     .projectsMain {
+        height:100%;
         /* border: solid white; */
         background-color: #071330;
         height: 612px;
@@ -246,6 +247,7 @@
         display:none;
     }
     .projectsMain {
+        height:100%;
         /* border: solid white; */
         background-color: #071330;
         height: 612px;
