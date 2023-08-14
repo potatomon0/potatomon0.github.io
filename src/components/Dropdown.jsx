@@ -3,23 +3,18 @@ import {AppContext} from '../contexts/context'
 import DropdownItem from './DropdownItem'
 import home from '../img/home.png'
 import profile from '../img/user.png'
-import contact from '../img/envelope.png'
 import {Link} from 'react-router-dom'
 import dropdownIcon from '../img/dropdown_icon.png'
 
 function Dropdown(props){
   let {open,setOpen}=useContext(AppContext);
   let menuRef=useRef()
-  const error = ()=>{
-    return(
-      <div>Error</div>
-    )
-  }
   useEffect(()=>{
     let handler=(event)=>{
 
       if(!menuRef.current.contains(event.target)){
       setOpen(false);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }
     }
     document.addEventListener("mousedown",handler)

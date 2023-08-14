@@ -44,6 +44,7 @@ function Main() {
             </div>
             <Navbar />
             <Weather />
+            // eslint-disable-next-line react-hooks/exhaustive-deps
         </div>
 }
         </>

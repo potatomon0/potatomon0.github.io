@@ -1,21 +1,17 @@
-import logo from './logo.svg';
-// import './App.css';
 import React, { useContext, useEffect } from 'react';
 import {AppContext} from './contexts/context'
 import { Route, Routes } from 'react-router-dom'
-import Weather from './components/Weather'
 import Main from './pages/Main'
 import Projects from './pages/Projects'
-import ProjectInfo from './pages/ProjectInfo'
 import Project1 from './pages/Project1'
 import Project2 from './pages/Project2'
 import Project3 from './pages/Project3'
 import Project4 from './pages/Project4'
 
 function App() {
-  const { data, getIP } = useContext(AppContext)
+  const { getIP } = useContext(AppContext)
   useEffect(() => {
-    getIP()
+    getIP();
   }, [])
   return (
     <div className="App">
