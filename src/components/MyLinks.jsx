@@ -16,7 +16,7 @@ function MyLinks() {
                 <img src={github} alt="" className='linkIcon'/></a>
             </div>
             <div className="link">
-                <a href={resume} target="_blank"><img src={user} alt="" className="linkIcon" rel="noopener noreferrer"/></a>
+                <a href={resume} target="_blank" rel="noreferrer"><img src={user} alt="" className="linkIcon" rel="noopener noreferrer"/></a>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import { useContext,useState,useEffect } from 'react'
 import { AppContext } from '../contexts/context'
 import RightArrow from '../components/RightArrow'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import MyLinks from '../components/MyLinks'
 import './Main.css'
 import Weather from "../components/Weather";
@@ -15,9 +15,11 @@ function Main() {
     const [done, setDone] = useState(undefined);
     useEffect(() => {
         setOpen(false);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         setTimeout(() => {
             setDone(true);
         }, 600);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <>
@@ -44,7 +46,7 @@ function Main() {
             </div>
             <Navbar />
             <Weather />
-            // eslint-disable-next-line react-hooks/exhaustive-deps
+            {/*// eslint-disable-next-line react-hooks/exhaustive-deps*/}
         </div>
 }
         </>

@@ -18,6 +18,7 @@ function Project1() {
     }, 600);
     console.log(pj)
   }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <>
       {!done ? (

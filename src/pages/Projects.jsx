@@ -14,7 +14,7 @@ import pj4Img from '../img/pj4Filler.png'
 import Navbar from '../components/Navbar'
 
 function Projects() {
-  const { pj1, pj2, pj3, pj4 } = useState(projectInfo)
+  // const { pj1, pj2, pj3, pj4 } = useState(projectInfo)
   let {setOpen} = useContext(AppContext)
   const [done, setDone] = useState(undefined)
   useEffect(() => {
@@ -23,6 +23,7 @@ function Projects() {
       setDone(true);
     }, 600);
   }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <>
       {!done ? (

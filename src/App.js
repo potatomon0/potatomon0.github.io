@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     getIP();
   }, [])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <div className="App">
       <Routes>
