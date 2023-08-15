@@ -15,11 +15,9 @@ function Main() {
     const [done, setDone] = useState(undefined);
     useEffect(() => {
         setOpen(false);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         setTimeout(() => {
             setDone(true);
         }, 600);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <>
@@ -46,7 +44,6 @@ function Main() {
             </div>
             <Navbar />
             <Weather />
-            {/*// eslint-disable-next-line react-hooks/exhaustive-deps*/}
         </div>
 }
         </>

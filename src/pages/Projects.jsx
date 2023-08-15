@@ -23,7 +23,6 @@ function Projects() {
       setDone(true);
     }, 600);
   }, []);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <>
       {!done ? (
