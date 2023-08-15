@@ -12,9 +12,8 @@ function App() {
   const { getIP } = useContext(AppContext)
   useEffect(() => {
     getIP();
-  }, [
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-  ])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className="App">
